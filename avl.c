@@ -676,12 +676,12 @@ void loadCommands()
 				insert(root, value);
 				createNewFile();
 			}
-			if (strncmp(someCommand, "delete", 6) == 0)
+			else if (strncmp(someCommand, "delete", 6) == 0)
 			{
 				deletion(value);
 				createNewFile();
 			}
-			if (strncmp(someCommand, "sort", 4) == 0)
+			else if (strncmp(someCommand, "sort", 4) == 0)
 			{
 				sort(root);
 			}
